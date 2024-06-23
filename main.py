@@ -12,17 +12,22 @@ def start_screen(stdscr):
 def wpm_test(stdscr):
     target_text = "hello world this is some test text for this app!"
     current_text = []
-    stdscr.clear()
-    stdscr.addstr(target_text)
-    stdscr.refresh()
-    stdscr.getkey()
+   
+    
 
     while True:
         key = stdscr.getkey()
+        if ord(key) == 27:
+            break
         current_text.append(key)
+        stdscr.clear()
+        stdscr.addstr(target_text)
+        
 
         for char in current_text:
             stdscr.addstr(char, curses.color_pair(1))
+
+        stdscr.refresh()
 
 
 def main(stdscr):
