@@ -17,6 +17,12 @@ def wpm_test(stdscr):
     stdscr.refresh()
     stdscr.getkey()
 
+    while True:
+        key = stdscr.getkey()
+        current_text.append(key)
+
+        for char in current_text:
+            stdscr.addstr(char, curses.color_pair(1))
 
 
 def main(stdscr):
@@ -25,6 +31,7 @@ def main(stdscr):
     curses.init_pair(2, curses.COLOR_WHITE, curses.COLOR_BLACK)
     
     start_screen(stdscr)
+    wpm_test(stdscr)
 
 
 wrapper(main)
