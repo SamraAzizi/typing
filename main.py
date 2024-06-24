@@ -8,6 +8,15 @@ def start_screen(stdscr):
     stdscr.refresh()
     stdscr.getkey()
     
+
+def display_text(stdscr, target, current, wpm=0):
+    stdscr.addstr(target_text)
+        
+
+    for i, char in enumerate(current_text):
+        stdscr.addstr(0, i,char, curses.color_pair(1))
+    
+
     
 def wpm_test(stdscr):
     target_text = "hello world this is some test text for this app!"
@@ -17,11 +26,7 @@ def wpm_test(stdscr):
 
     while True:
         stdscr.clear()
-        stdscr.addstr(target_text)
         
-
-        for char in current_text:
-            stdscr.addstr(char, curses.color_pair(1))
 
         stdscr.refresh()
         
