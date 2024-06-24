@@ -10,7 +10,7 @@ def start_screen(stdscr):
     
 
 def display_text(stdscr, target, current, wpm=0):
-    stdscr.addstr(target_text)
+    stdscr.addstr(target)
         
 
     for i, char in enumerate(current):
