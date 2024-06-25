@@ -1,5 +1,6 @@
 import curses
 from curses import wrapper
+import time
 
 def start_screen(stdscr):
     stdscr.clear()
@@ -28,6 +29,7 @@ def wpm_test(stdscr):
     target_text = "hello world this is some test text for this app!"
     current_text = []
     wpm = 0
+    start_time = time.time()
    
     
 
