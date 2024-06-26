@@ -43,12 +43,16 @@ def wpm_test(stdscr):
 
         stdscr.refresh()
 
-       
-        key = stdscr.getkey()
+        if "".join(current_text) == target_text:
+            stdscr.nodelay(False)
+
+        try:
+
+            key = stdscr.getkey()
+        except:
+            continue
 
         
-        
-        key = stdscr.getkey()
         if ord(key) == 27:
             break
 
