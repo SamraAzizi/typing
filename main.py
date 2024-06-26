@@ -43,11 +43,10 @@ def wpm_test(stdscr):
 
         stdscr.refresh()
 
-        try:
-            key = stdscr.getkey()
+       
+        key = stdscr.getkey()
 
-        except:
-            continue
+        
         
         key = stdscr.getkey()
         if ord(key) == 27:
