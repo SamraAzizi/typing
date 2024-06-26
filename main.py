@@ -79,9 +79,14 @@ def main(stdscr):
     curses.init_pair(2, curses.COLOR_WHITE, curses.COLOR_BLACK)
     
     start_screen(stdscr)
-    wpm_test(stdscr)
+    while True:
 
-    stdscr.addstr(2,0,"You Completed The Text! Press Any Key To Continue...")
-    stdscr.getkey()
+        wpm_test(stdscr)
+
+        stdscr.addstr(2,0,"You Completed The Text! Press Any Key To Continue...")
+        key = stdscr.getkey()
+        if ord(key) == 27:
+            break
+
 
 wrapper(main)
