@@ -45,6 +45,7 @@ def wpm_test(stdscr):
 
         if "".join(current_text) == target_text:
             stdscr.nodelay(False)
+            break
 
         try:
 
@@ -80,5 +81,7 @@ def main(stdscr):
     start_screen(stdscr)
     wpm_test(stdscr)
 
+    stdscr.addstr(2,0,"You Completed The Text! Press Any Key To Continue...")
+    stdscr.getkey()
 
 wrapper(main)
