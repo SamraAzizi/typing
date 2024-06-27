@@ -5,4 +5,10 @@ This is a simple speed typing test application implemented using the `curses` li
 ## Features
 
 - Random text loading from a file
-- Re
+- Real-time WPM calculation
+- Visual feedback for correct and incorrect keystrokes
+- Simple and interactive terminal-based interface
+
+## Requirements
+
+- Python 3.x
