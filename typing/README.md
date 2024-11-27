@@ -19,33 +19,6 @@ A modern, interactive typing speed test application built with Python and Stream
 - Streamlit
 - Web browser
 
-##  Installation
-
-1. Clone the repository or download the files:
-```bash
-git clone <repository-url>
-cd typing
-```
-
-2. Install the required dependencies:
-```bash
-pip install streamlit
-```
-
-##  How to Run
-
-1. Navigate to the project directory:
-```bash
-cd typing
-```
-
-2. Run the Streamlit application:
-```bash
-streamlit run main.py
-```
-
-3. The application will open in your default web browser automatically.
-
 ##  How to Use
 
 1. When you start the application, you'll see a text display showing the text you need to type.
