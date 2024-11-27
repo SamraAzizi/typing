@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 from typing_test import TypingTest
 import time
@@ -348,11 +348,9 @@ def main():
 
 if __name__ == "__main__":
     main()
-=======
 
-import streamlit as st
-from typing_test import TypingTest
-import time
+
+
 
 def load_custom_css():
     st.markdown("""
