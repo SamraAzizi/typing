@@ -1,4 +1,19 @@
 
+ # Typing Speed Test Application
+
+A modern, interactive typing speed test application built with Python and Streamlit. Test and improve your typing speed with real-time feedback and detailed statistics.
+
+##  Features
+
+- Real-time WPM (Words Per Minute) calculation
+- Accuracy tracking
+- Mistake counting and detailed feedback
+- Multiple practice texts
+- Live progress tracking
+- Clean, modern user interface
+- Instant feedback on typing accuracy
+- Session-based statistics
+
 ##  Requirements
 
 - Python 3.8 or higher
