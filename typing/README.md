@@ -1,3 +1,4 @@
+
  # Typing Speed Test Application
 
 A modern, interactive typing speed test application built with Python and Streamlit. Test and improve your typing speed with real-time feedback and detailed statistics.
